@@ -366,6 +366,7 @@ function(Y, p, z=NULL, lambda0, lambda1, lambda3, lambda4, lambda5,
 # Summary function for BSVAR models
 "summary.BSVAR" <- function(object, ...)
 {
+    p <- dim(object$ar.coefs)[3]
     cat("------------------------------------------\n")
     cat("A0 restriction matrix\n")
     cat("------------------------------------------\n")

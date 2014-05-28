@@ -1,5 +1,5 @@
 Package: MSBVAR
-Version: 0.7-2
+Version: 0.7-3
 Date: 2011-07-26
 Title: Markov-Switching, Bayesian, Vector Autoregression Models
 Author: Patrick T. Brandt <pbrandt@utdallas.edu>
@@ -212,6 +212,7 @@ URL: http://www.utdallas.edu/~pbrandt/
 2012-07-26 Updated to correct Fortran allocation error.  Change
            initialization of msvar() function.  Corrects how the state
 	   space filter compiles across archs.
+2014-05-28 Updated to correct absent p in summary.BSVAR
 
 
 MSBVAR Package
