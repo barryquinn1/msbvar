@@ -3,7 +3,7 @@ Version: 0.7-3
 Date: 2011-07-26
 Title: Markov-Switching, Bayesian, Vector Autoregression Models
 Author: Patrick T. Brandt <pbrandt@utdallas.edu>
-Maintainer: Patrick T. Brandt <pbrandt@utdallas.edu>
+Maintainer: Patrick T. Brandt <pbrandt@utdallas.edu>, Boris Demeshev <boris.demeshev@gmail.com>
 Depends: R (>= 2.11.0), KernSmooth, xtable, coda, bit, mvtnorm
 Description: Provides methods for estimating frequentist and 
   Bayesian Vector Autoregression (VAR) models.  Functions for reduced
