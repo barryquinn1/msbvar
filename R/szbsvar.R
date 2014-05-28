@@ -39,7 +39,7 @@ function(Y, p, z=NULL, lambda0, lambda1, lambda3, lambda4, lambda5,
   }
 
       # Find the orthonormal bases for each of the Q matrices.  Need
-      # thse because they define the null space for the squeezing the
+      # these because they define the null space for the squeezing the
       # parameters. This is just the null space for each matrix in Q.
 
     Ui <- sapply(1:m, function(i){null.space(Q[,,i])}, simplify=F)
@@ -353,7 +353,8 @@ function(Y, p, z=NULL, lambda0, lambda1, lambda3, lambda4, lambda5,
                      df=capT,
                      n0=n0,
                      ident=ident,
-                     b=max.obj$par
+                     b=max.obj$par,
+                     p=p
                      )
     class(output) <- c("BSVAR")
     attr(output, "eqnames") <- colnames(Y) # Get variable names for
