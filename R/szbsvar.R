@@ -367,6 +367,8 @@ function(Y, p, z=NULL, lambda0, lambda1, lambda3, lambda4, lambda5,
 # Summary function for BSVAR models
 "summary.BSVAR" <- function(object, ...)
 {
+    p <- object$p
+  
     cat("------------------------------------------\n")
     cat("A0 restriction matrix\n")
     cat("------------------------------------------\n")
@@ -423,7 +425,6 @@ function(Y, p, z=NULL, lambda0, lambda1, lambda3, lambda4, lambda5,
     # RFs.
     cat("Structural Autoregressive matrices: \n")
     m <- dim(object$ar.coefs)[1]
-    p <- dim(object$ar.coefs)[3]
     struct.ar <- object$F.posterior[1:(m*p),]
     dim(struct.ar) <- c(m, m, p)
     struct.ar <- aperm(struct.ar, c(2,1,3))
