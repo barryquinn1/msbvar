@@ -39,7 +39,7 @@ function(Y, p, z=NULL, lambda0, lambda1, lambda3, lambda4, lambda5,
   }
 
       # Find the orthonormal bases for each of the Q matrices.  Need
-      # these because they define the null space for the squeezing the
+      # thse because they define the null space for the squeezing the
       # parameters. This is just the null space for each matrix in Q.
 
     Ui <- sapply(1:m, function(i){null.space(Q[,,i])}, simplify=F)
@@ -367,7 +367,6 @@ function(Y, p, z=NULL, lambda0, lambda1, lambda3, lambda4, lambda5,
 # Summary function for BSVAR models
 "summary.BSVAR" <- function(object, ...)
 {
-    p <- dim(object$ar.coefs)[3]
     cat("------------------------------------------\n")
     cat("A0 restriction matrix\n")
     cat("------------------------------------------\n")
