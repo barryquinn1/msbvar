@@ -874,7 +874,7 @@ forecast.MSBVAR <- function(x, k, N1=1000, N2=1000)
             {
                 forecasts[(j-N1),,i] <- t(fcast[,i])
                 states[[(j-N1)]] <-
-                    as.bit.integer(as.integer(ss$SS[,1:(h-1)]))
+                    as.bit(as.integer(ss$SS[,1:(h-1)]))
             }
         }
 
